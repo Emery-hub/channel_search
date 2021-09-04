@@ -31,6 +31,7 @@ class _SearchPageViewState extends State<SearchPageView> {
             // ignore: avoid_unnecessary_containers
             child: Container(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   //TextFIeld
                   Container(
@@ -38,9 +39,33 @@ class _SearchPageViewState extends State<SearchPageView> {
                     margin: const EdgeInsets.symmetric(
                         horizontal: 10, vertical: 30),
                     child: TextFormField(
-                        // style: textStyling(),
-                        decoration:
-                            textFormFields('Search people on #teamsocrates')),
+                      // style: textStyling(),
+                      decoration:
+                          textFormFields('Search people on #teamsocrates'),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.add,
+                            color: greenColor,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "Add People",
+                          style: greenTextStyle(),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 10,
                   ),
 
                   // ignore: avoid_unnecessary_containers

@@ -50,20 +50,15 @@ class _SearchResultsState extends State<SearchResults> {
 
           //userName
           Container(
-              // margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-              padding: const EdgeInsets.only(left: 45, right: 0),
-              child: ListTile(
-                title: Text(
-                  'Destiny',
-                  style: nameStyle(),
-                ),
-                trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.close,
-                      color: red,
-                    )),
-              )),
+            // margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+            padding: const EdgeInsets.only(left: 45, right: 0),
+            child: ListTile(
+              title: Text(
+                'Destiny',
+                style: nameStyle(),
+              ),
+            ),
+          ),
         ],
       ),
     );

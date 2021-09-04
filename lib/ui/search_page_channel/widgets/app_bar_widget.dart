@@ -10,7 +10,7 @@ Widget appBarMain() {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 19.0, vertical: 19),
           child: Text(
-            'Done',
+            'Edit',
             style: greenTextStyle(),
           ),
         ),
